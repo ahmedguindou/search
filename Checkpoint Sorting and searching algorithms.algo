@@ -1,0 +1,14 @@
+ALGORITHM Tri_Insertion
+ VAR  i , j ,v:INTEGER;     
+ t: ARRAY_OF INTEGER[];     
+BEGIN  
+FOR i FROM 1 TO t.length-1   DO      
+    v:=t[i];
+    j:=i;      
+WHILE (t[j-1]>v) DO          
+    t[j]:=t[j-1]          
+    j:=j-1;     
+END_WHILE       
+    t[j]:=v;  
+END_FOR 
+END
